@@ -298,13 +298,17 @@ streamlit run app/streamlit_app.py
 
 ---
 
-# 👩‍💻 Developer
+# 👩‍💻 Authors
 
-**Arpita**
+- **Arpita Jaiswal**
+- **Simran Manhas**
+- **Divya Prakash Verma**
 
-M.Sc. Data Science  
-Chandigarh University
+---
 
+**Project Developed at:**
+
+Centre for Development of Advanced Computing (C-DAC), Mohali
 ---
 
 # 🙏 Acknowledgements
