@@ -152,7 +152,7 @@ def search_image(query_image, top_k=5):
             continue
 
         relative_path = image_paths[idx]
-        image_path = os.path.join(PROJECT_ROOT,relative_path)
+        image_path = os.path.normpath(os.path.join(PROJECT_ROOT, relative_path))
         image_name = os.path.basename(image_path)
 
 

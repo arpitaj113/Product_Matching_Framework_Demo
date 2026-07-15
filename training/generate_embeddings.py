@@ -194,7 +194,9 @@ class ProductDataset(Dataset):
             if self.transform:
                 image = self.transform(image)
 
-            return image, image_path
+            relative_path = os.path.relpath(image_path, PROJECT_ROOT)
+            relative_path = relative_path.replace(os.sep, "/")
+            return image, relative_path
 
         except Exception as e:
 
