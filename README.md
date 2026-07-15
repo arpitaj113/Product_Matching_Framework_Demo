@@ -4,13 +4,25 @@ A Deep Metric Learning based Product Image Retrieval System that retrieves visua
 
 ---
 
+# 🌐 Live Demo
+
+🚀 **Live Application**
+
+https://appuctmatchingframeworkdemo-mk7y.streamlit.app/
+
+💻 **GitHub Repository**
+
+https://github.com/arpitaj113/Product_Matching_Framework_Demo
+
+---
+
 ## 📌 Overview
 
 Searching for visually similar products is one of the most important tasks in modern e-commerce platforms. Traditional image classification models identify the category of an object but are unable to retrieve products that look similar.
 
 This project solves this problem using **Deep Metric Learning** with **Triplet Loss**, where visually similar products are mapped closer together in an embedding space while dissimilar products are pushed farther apart.
 
-The generated embeddings are indexed using **FAISS**, enabling extremely fast similarity search over **139,521 product images** from the Stanford Online Products Dataset.
+The generated embeddings are indexed using **FAISS**, enabling extremely fast similarity search. The original project was developed using the **Stanford Online Products Dataset (139,521 images)**, while this repository contains a lightweight demo dataset for deployment.
 
 ---
 
@@ -31,8 +43,8 @@ The generated embeddings are indexed using **FAISS**, enabling extremely fast si
 
 # 📂 Project Structure
 
-```
-Product_Matching_Framework
+```text
+Product_Matching_Framework_Demo
 │
 ├── app/
 │   └── streamlit_app.py
@@ -72,7 +84,7 @@ Product_Matching_Framework
 
 # 🏗️ System Architecture
 
-```
+```text
                 Query Image
                      │
                      ▼
@@ -117,27 +129,19 @@ Product_Matching_Framework
 | Embedding Dimension | 128 |
 | Framework | PyTorch |
 | Similarity Search | FAISS |
-| Dataset | Stanford Online Products |
+| Original Dataset | Stanford Online Products |
 
 ---
 
 # 📊 Dataset Information
 
-**Dataset Name**
-
-Stanford Online Products Dataset
-
-**Total Images**
-
-139,521
-
-**Product Categories**
-
-22,634
-
-**Image Size**
-
-224 × 224
+| Attribute | Value |
+|-----------|-------|
+| Original Dataset | Stanford Online Products |
+| Original Images | 139,521 |
+| Product Categories | 22,634 |
+| Demo Dataset | 396 Images |
+| Image Size | 224 × 224 |
 
 ---
 
@@ -168,39 +172,15 @@ Stanford Online Products Dataset
 
 ---
 
-## 🥇 Match 1
+## 🎯 Search Results
 
-![Match 1](assets/match-1.png)
-
----
-
-## 🥈 Match 2
-
-![Match 2](assets/match-2.png)
-
----
-
-## 🥉 Match 3
-
-![Match 3](assets/match-3.png)
-
----
-
-## 🏅 Match 4
-
-![Match 4](assets/match-4.png)
-
----
-
-## 🏅 Match 5
-
-![Match 5](assets/match-5.png)
+![Search Results](assets/results.png)
 
 ---
 
 # 🔍 Retrieval Pipeline
 
-```
+```text
 Input Image
       │
       ▼
@@ -225,7 +205,8 @@ Top-5 Similar Images
 
 | Parameter | Value |
 |-----------|-------|
-| Dataset Size | 139,521 Images |
+| Original Dataset | 139,521 Images |
+| Demo Dataset | 396 Images |
 | Embedding Size | 128 |
 | Model Size | ~46 MB |
 | Search Engine | FAISS |
@@ -239,13 +220,13 @@ Top-5 Similar Images
 Clone the repository
 
 ```bash
-git clone https://github.com/<arpitaj113>/Product_Matching_Framework.git
+git clone https://github.com/arpitaj113/Product_Matching_Framework_Demo.git
 ```
 
 Move into the project
 
 ```bash
-cd Product_Matching_Framework
+cd Product_Matching_Framework_Demo
 ```
 
 Install dependencies
@@ -306,9 +287,10 @@ streamlit run app/streamlit_app.py
 
 ---
 
-**Project Developed at:**
+## 🏛️ Project Developed At
 
-Centre for Development of Advanced Computing (C-DAC), Mohali
+**Centre for Development of Advanced Computing (C-DAC), Mohali**
+
 ---
 
 # 🙏 Acknowledgements
@@ -320,4 +302,4 @@ Centre for Development of Advanced Computing (C-DAC), Mohali
 
 ---
 
-# ⭐ If you found this project useful, consider giving it a Star!
+⭐ **If you found this project useful, consider giving it a Star!**
