@@ -153,6 +153,11 @@ def search_image(query_image, top_k=5):
 
         relative_path = image_paths[idx]
         image_path = os.path.normpath(os.path.join(PROJECT_ROOT, relative_path))
+        print("=" * 60)
+        print("Relative Path :", relative_path)
+        print("Resolved Path :", image_path)
+        print("File Exists   :", os.path.exists(image_path))
+        print("=" * 60)
         image_name = os.path.basename(image_path)
 
 
